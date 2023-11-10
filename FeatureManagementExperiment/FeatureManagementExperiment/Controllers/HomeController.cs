@@ -1,5 +1,6 @@
 ﻿using FeatureManagementExperiment.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.FeatureManagement.Mvc;
 using System.Diagnostics;
 
 namespace FeatureManagementExperiment.Controllers
