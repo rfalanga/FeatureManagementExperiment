@@ -1,7 +1,12 @@
+using Microsoft.FeatureManagement;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Trying to add feature flag
+builder.Services.AddFeatureManagement();
 
 var app = builder.Build();
 

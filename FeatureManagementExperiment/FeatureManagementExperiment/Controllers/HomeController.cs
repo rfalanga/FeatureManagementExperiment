@@ -1,5 +1,6 @@
 ﻿using FeatureManagementExperiment.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.FeatureManagement.Mvc;
 using System.Diagnostics;
 
 namespace FeatureManagementExperiment.Controllers
@@ -18,6 +19,7 @@ namespace FeatureManagementExperiment.Controllers
             return View();
         }
 
+        [FeatureGate("FeaturePrivacy")]  // this here will prevent going to the view, but the link is still on the page
         public IActionResult Privacy()
         {
             return View();
