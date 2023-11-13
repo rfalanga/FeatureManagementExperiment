@@ -11,6 +11,9 @@ namespace FeatureManagementExperiment.Controllers
 
         public FeatureFlagOneController(ILogger<FeatureFlagOneController> logger) => _logger = logger;
 
-        public IActionResult FeatureFlagOne() => View();
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
