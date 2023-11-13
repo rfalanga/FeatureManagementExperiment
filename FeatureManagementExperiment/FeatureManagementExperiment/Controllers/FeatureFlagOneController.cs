@@ -11,6 +11,7 @@ namespace FeatureManagementExperiment.Controllers
 
         public FeatureFlagOneController(ILogger<FeatureFlagOneController> logger) => _logger = logger;
 
+        [FeatureGate("SimpleFeature")]  // this here will prevent going to the view, but the link is still on the page
         public IActionResult Index()
         {
             return View();
